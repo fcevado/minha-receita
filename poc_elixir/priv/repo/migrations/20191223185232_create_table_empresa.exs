@@ -1,4 +1,4 @@
-defmodule Receita.Repo.Migrations.CreateTableEmpresas do
+defmodule Receita.Repo.Migrations.CreateTableEmpresa do
   use Ecto.Migration
 
   def change do

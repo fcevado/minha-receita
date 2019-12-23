@@ -4,6 +4,7 @@ defmodule Receita.Empresa do
   import Ecto.Changeset
 
   schema "empresa" do
+    has_many :socios, Receita.Socio
     field :cnpj, :string
     field :identificador_matriz_filial, :integer
     field :razao_social, :string
@@ -30,10 +31,10 @@ defmodule Receita.Empresa do
     field :qualificacao_do_responsavel, :integer
     field :capital_social, :decimal
     field :porte, :integer
-    field :opcao_pelo_simples, :bool
+    field :opcao_pelo_simples, :boolean
     field :data_opcao_pelo_simples, :string
     field :data_exclusao_do_simples, :string
-    field :opcao_pelo_mei, :bool
+    field :opcao_pelo_mei, :boolean
     field :situacao_especial, :string
     field :data_situacao_especial, :string
   end
