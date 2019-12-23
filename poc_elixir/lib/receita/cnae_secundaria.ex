@@ -1,12 +1,12 @@
-defmodule Receita.Cnae do
+defmodule Receita.CnaeSecundaria do
   use Ecto.Schema
   import Ecto.Changeset
 
-  schema "cnae" do
-    has_many :cnae_secundarias, Receita.CnaeSecundaria
-
+  schema "cnae_secundaria" do
+    belongs_to :empresa, Receita.Empresa
+    belongs_to :cnae, Receita.Cnae
+    field :cnpj, :string
     field :codigo, :string
-    field :descricao, :string
   end
 
   def changeset(struct, params) do
