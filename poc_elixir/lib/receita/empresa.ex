@@ -6,6 +6,7 @@ defmodule Receita.Empresa do
   schema "empresa" do
     has_many :socios, Receita.Socio
     has_many :cnae_secundarias, Receita.CnaeSecundaria
+    belongs_to :cnae, Receita.Cnae
 
     field :cnpj, :string
     field :identificador_matriz_filial, :integer

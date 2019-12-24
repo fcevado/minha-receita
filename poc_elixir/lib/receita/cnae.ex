@@ -5,6 +5,7 @@ defmodule Receita.Cnae do
 
   schema "cnae" do
     has_many :cnae_secundarias, Receita.CnaeSecundaria
+    has_many :empresas, Receita.Empresa
 
     field :codigo, :string
     field :descricao, :string
