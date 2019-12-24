@@ -10,7 +10,7 @@ defmodule Receita.Repo.Migrations.CreateTableSocio do
       add :cnpj_cpf_do_socio, :text
       add :codigo_qualificacao_socio, :integer
       add :percentual_capital_social, :integer
-      add :data_entrada_sociedade, :date
+      add :data_entrada_sociedade, :text
       add :cpf_representante_legal, :text
       add :nome_representante_legal, :text
       add :codigo_qualificacao_representante_legal, :integer

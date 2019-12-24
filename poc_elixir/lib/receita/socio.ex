@@ -10,7 +10,7 @@ defmodule Receita.Socio do
     field :cnpj_cpf_do_socio, :string
     field :codigo_qualificacao_socio, :integer
     field :percentual_capital_social, :integer
-    field :data_entrada_sociedade, :date
+    field :data_entrada_sociedade, :string
     field :cpf_representante_legal, :string
     field :nome_representante_legal, :string
     field :codigo_qualificacao_representante_legal, :integer

@@ -8,11 +8,11 @@ defmodule Receita.Repo.Migrations.CreateTableEmpresa do
       add :razao_social, :text
       add :nome_fantasia, :text
       add :situacao_cadastral, :integer
-      add :data_situacao_cadastral, :date
+      add :data_situacao_cadastral, :string
       add :motivo_situacao_cadastral, :integer
       add :nome_cidade_exterior, :text
       add :codigo_natureza_juridica, :integer
-      add :data_inicio_atividade, :date
+      add :data_inicio_atividade, :string
       add :cnae_fiscal, :integer
       add :descricao_tipo_logradouro, :text
       add :logradouro, :text

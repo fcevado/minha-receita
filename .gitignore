@@ -2,5 +2,6 @@
 .env
 __pycache__/
 data/*.gz
+data/*.csv
 data/*.xlsx
 data/postgres

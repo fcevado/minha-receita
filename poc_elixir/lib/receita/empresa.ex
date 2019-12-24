@@ -12,11 +12,11 @@ defmodule Receita.Empresa do
     field :razao_social, :string
     field :nome_fantasia, :string
     field :situacao_cadastral, :integer
-    field :data_situacao_cadastral, :date
+    field :data_situacao_cadastral, :string
     field :motivo_situacao_cadastral, :integer
     field :nome_cidade_exterior, :string
     field :codigo_natureza_juridica, :integer
-    field :data_inicio_atividade, :date
+    field :data_inicio_atividade, :string
     field :cnae_fiscal, :integer
     field :descricao_tipo_logradouro, :string
     field :logradouro, :string

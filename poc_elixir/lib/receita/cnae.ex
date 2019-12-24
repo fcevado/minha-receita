@@ -1,4 +1,5 @@
 defmodule Receita.Cnae do
+  @moduledoc "Descrição do CNAE"
   use Ecto.Schema
   import Ecto.Changeset
 

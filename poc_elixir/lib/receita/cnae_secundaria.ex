@@ -1,4 +1,5 @@
 defmodule Receita.CnaeSecundaria do
+  @moduledoc "Lista CNAE secundárias das Empresas"
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -11,7 +12,7 @@ defmodule Receita.CnaeSecundaria do
 
   def changeset(struct, params) do
     struct
-    |> cast(params, ~w(codigo descricao)a)
-    |> validate_required(~w(codigo descricao)a)
+    |> cast(params, ~w(cnpj codigo)a)
+    |> validate_required(~w(cnpj codigo)a)
   end
 end
